@@ -1,4 +1,3 @@
-import os
 from random import random
 from threading import Thread
 from time import sleep
@@ -8,8 +7,6 @@ from time import mktime
 from pypresence import Presence
 import subprocess
 import platform
-root_tk = tkinter.Tk()  # create the Tk window like you normally do
-root_tk.geometry("0x0")
 """
 https://discord.com/developers/applications/940028576407912450/rich-presence/assets
 """
