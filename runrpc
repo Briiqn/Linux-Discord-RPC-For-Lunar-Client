@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 getppid=$(pidof plasmashell)
-
+#please dont cyberbully me for this "wonderful" code
 if [ "$(xdotool getactivewindow getwindowname)" == "Lunar Client (1.8.9-a1f71bc/master)" ]; then
 cpy ~/llrpc/1.8rpc.py & disown
 sleep 10;
