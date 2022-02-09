@@ -1,4 +1,3 @@
-
 import os
 from random import random
 from threading import Thread
@@ -7,7 +6,6 @@ import time
 import random
 from time import mktime
 from pypresence import Presence
-import psutil
 import subprocess
 import platform
 """
