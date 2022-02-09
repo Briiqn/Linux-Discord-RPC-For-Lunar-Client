@@ -1,4 +1,4 @@
-# Linux-Discord-RPC-For-Lunar-Client
+# Linux-Discord-RPC-For-Lunar-Client-QT
 Uses pypresence and xdotool to display what version and state of lunar client
 
 
