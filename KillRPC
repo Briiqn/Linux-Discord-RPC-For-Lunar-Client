@@ -1,0 +1,12 @@
+#!/bin/bash
+clear
+sleep 1
+if pgrep -x java >/dev/null  ; then
+exec bash "$0" "$@"
+else
+killall cpy
+killall runrpc
+kill -9 $PPID
+fi
+
+

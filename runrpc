@@ -1,0 +1,40 @@
+#!/bin/bash
+clear
+getppid=$(pidof plasmashell)
+
+if [ "$(xdotool getactivewindow getwindowname)" == "Lunar Client (1.8.9-a1f71bc/master)" ]; then
+cpy ~/llrpc/1.8rpc.py & disown
+sleep 10;
+killall cpy
+exec "$0" "$@"
+elif [ "$(xdotool getactivewindow getwindowname)" == "Lunar Client (1.7.10-a1f71bc/master)" ]; then
+cpy ~/llrpc/1.7rpc.py & disown
+sleep 10;
+killall cpy
+exec "$0" "$@"
+elif [ "$(xdotool getactivewindow getwindowname)" == "Lunar Client (1.16.5-a1f71bc/master)" ]; then
+cpy ~/llrpc/1.16rpc.py & disown
+sleep 10;
+killall cpy
+exec "$0" "$@"
+elif [ "$(xdotool getactivewindow getwindowname)" == "Lunar Client (1.12.2-a1f71bc/master)" ]; then
+cpy ~/llrpc/1.12rpc.py & disown
+sleep 10;
+killall cpy
+exec "$0" "$@"
+elif [ "$(xdotool getactivewindow getwindowname)" == "Lunar Client (1.17.1-a1f71bc/master)" ]; then
+cpy ~/llrpc/1.17rpc.py & disown
+sleep 10;
+killall cpy
+exec "$0" "$@"
+elif [ "$(xdotool getactivewindow getwindowname)" == "Lunar Client (1.18.1-a1f71bc/master)" ]; then
+cpy ~/llrpc/1.18rpc.py & disown
+sleep 10;
+killall cpy
+exec "$0" "$@"
+else
+cpy ~/llrpc/idlerpc.py & disown
+sleep 25;
+killall cpy
+exec "$0" "$@"
+fi
