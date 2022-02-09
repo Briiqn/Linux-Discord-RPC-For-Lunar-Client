@@ -6,7 +6,6 @@ import time
 import random
 from time import mktime
 from pypresence import Presence
-import psutil
 import subprocess
 import platform
 """
